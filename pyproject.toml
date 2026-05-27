@@ -1,0 +1,13 @@
+[project]
+name = "pipeline-operaciones-taxis"
+version = "0.1.0"
+description = "Pipeline de datos reproducible para la gestión de flotas de taxis"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.0.0",
+    "psycopg2-binary>=2.9.0",
+    "python-dotenv>=1.0.0",
+    "python-docx>=1.1.0",
+    "sqlalchemy>=2.0.0"
+]

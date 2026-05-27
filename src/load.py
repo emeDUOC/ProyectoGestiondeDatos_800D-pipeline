@@ -25,7 +25,7 @@ def load() -> None:
         # Ejecutar plano DDL inicial si existe
         if os.path.exists(sql_script_path):
             log.info("Verificando existencia de la estructura de tablas SQL...")
-            with open(sql_script_path, "r") as f:
+            with open(sql_script_path, "r", encoding="utf-8") as f:
                 with engine.connect() as connection:
                     connection.execute(text(f.read()))
                     connection.commit()
